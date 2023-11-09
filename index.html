@@ -9,24 +9,32 @@
 </head>
 
 <body>
+    <h1>DMO Daily List</h1>
+
     <div>
+	
         <label for="user-select">Select User:</label>
         <select id="user-select">
             <!-- Add an empty default option -->
             <option value="" disabled selected>Select User</option>
-            <option value="user1">User 1</option>
-            <option value="user2">User 2</option>
-            <option value="user3">User 3</option>
+            <option value="BACISIKEN">BACISIKEN</option>
+            <option value="Alberyll">Alberyll</option>
+            <option value="xLogi">xLogi</option>
+			<option value="Tanerb4b4">Tanerb4b4</option>
         </select>
     </div>
+
     <div>
-        <label for="task">Add Task:</label>
+		<button id="add-user">Add User</button>
+    <button id="remove-user">Remove User</button>
+        <label for="task">Add Daily:</label>
         <input type="text" id="task" disabled>
         <button id="add-task" disabled>Add</button>
     </div>
     <ul id="todo-list"></ul>
-    <button id="remove-task" disabled>Remove Task</button>
-    <button id="reset-list" disabled>Reset List</button>
+    <button id="remove-task" disabled>Remove Daily</button>
+    <button id="reset-list" disabled>Reset Daily</button>
+
 
     <script src="script.js"></script>
 </body>
