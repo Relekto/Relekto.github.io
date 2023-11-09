@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <label for="user-select">Select User:</label>
+        <select id="user-select">
+            <!-- Add an empty default option -->
+            <option value="" disabled selected>Select User</option>
+            <option value="user1">User 1</option>
+            <option value="user2">User 2</option>
+            <option value="user3">User 3</option>
+        </select>
+    </div>
+    <div>
+        <label for="task">Add Task:</label>
+        <input type="text" id="task" disabled>
+        <button id="add-task" disabled>Add</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <button id="remove-task" disabled>Remove Task</button>
+    <button id="reset-list" disabled>Reset List</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
