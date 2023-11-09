@@ -2,17 +2,44 @@ body {
     background-color: #222;
     color: #fff;
     font-family: Arial, sans-serif;
+	display: flex;
+    flex-direction: column;
 }
 
-select, input, button {
+#user-select,
+#add-user,
+#remove-user {
+    margin-bottom: 10px;
+}
+
+/* Style for the task input and its related buttons */
+#task,
+#add-task {
+    margin-bottom: 10px;
+}
+#remove-task,
+#reset-list {
+    margin-bottom: 10px;
+}
+
+label {
+	font-size: 22px;
+}
+input{
+	font-size: 28px;
+	background-color: #333;
+    color: #fff;
+    border: none;
+}
+select, button {
     background-color: #333;
     color: #fff;
     border: none;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 button {
-    padding: 12px 24px;
+    padding: 15px 20px;
 }
 
 #todo-list {
